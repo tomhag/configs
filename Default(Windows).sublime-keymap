@@ -1,9 +1,10 @@
 [
 	{
-	  "keys": ["ctrl+shift+x"],
-	  "command": "insert_snippet",
-	  "args": {
-	    "name": "Packages/Babel Snippets/react_wrap.sublime-snippet"
-	  }
+		"keys": ["ctrl+shift+x"],
+		"command": "insert_snippet",
+		"args": {
+			"name": "Packages/Babel Snippets/react_wrap.sublime-snippet"
+		}
 	}
 ]
+
