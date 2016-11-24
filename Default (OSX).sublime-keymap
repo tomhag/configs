@@ -3,4 +3,7 @@
 [
 	{ "keys": ["super+-"], "command": "toggle_comment", "args": { "block": false } },
 	{ "keys": ["super+alt+-"], "command": "toggle_comment", "args": { "block": true } },
+
+	{ "keys": ["super+alt+p"], "command": "fold" },
+	{ "keys": ["super+alt+å"], "command": "unfold" },
 ]
