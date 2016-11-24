@@ -1,0 +1,6 @@
+// SublimeText3/Packages/User
+
+[
+	{ "keys": ["super+-"], "command": "toggle_comment", "args": { "block": false } },
+	{ "keys": ["super+alt+-"], "command": "toggle_comment", "args": { "block": true } },
+]
