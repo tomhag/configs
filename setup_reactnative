@@ -1,0 +1,112 @@
+
+SSH Keys
+----------------------------
+1. Generete SSH keys
+	- ssh-keygen -t rsa -b 4096 -C "tomhag@yourmail.com"
+
+2. Start local SSH agent process: 
+	- eval "$(ssh-agent -s)"
+
+3. Copy public SSH key: 
+	- pbcopy < ~/.ssh/id_rsa.pub
+
+4. Add SSH-key in your Github profile settings
+
+5. Test connection
+	- ssh -T git@github.com
+
+GIT setup NEW Push
+----------------------------
+1. Goto project folder
+
+2. Git config --global user.name = xxx
+	 Git config --global user.email = xxx
+
+3. Git init
+	 Git add .
+	 Git commit -m "message"
+	 Git push
+
+GIT setup Clone
+----------------------------
+1. Goto dev folder
+
+2. git clone https://github.com/tomhag/rn-albums
+
+Terminal
+----------------------------
+1. .bash_profile
+	- ezprmompt.net
+	export PS1="\[\e[33m\]\h[\u]\n\w\\$:\[\e[m\]"
+
+2. Tmux
+	- brew install tmux
+
+SublimeText
+----------------------------
+1. https://packagecontrol.io/installation
+
+2. Preferences.sublime-settings:
+	{
+		"rulers": [80],
+		"word_wrap": true,
+		"tab_size": 2,
+		"font_face": "Ubuntu mono",
+		"font_size": 12,
+		"ignored_packages":
+		[
+			"Vintage"
+		]
+	}
+
+3. Keybindings
+	[
+		{ "keys": ["super+-"], "command": "toggle_comment", "args": { "block": false } },
+		{ "keys": ["super+alt+-"], "command": "toggle_comment", "args": { "block": true } },
+		{ "keys": ["super+alt+p"], "command": "fold" },
+		{ "keys": ["super+alt+å"], "command": "unfold" },
+	]
+
+4. Packages
+
+
+ReactNative Setup Process
+----------------------------
+1. XCode
+	* from appstore
+
+2. Homebrew - Used to install node
+	- in browser: goto 'brew.sh' and copy command line
+	- in terminal: paste into terminal and run
+
+3. NodeJS - 
+	- in terminal: brew install node
+
+4. Watchman - Hot reload
+	- in terminal: brew install watchman
+
+5. ReactNative CLI - RN project generation
+	- in terminal: npm install -g react-native-cli
+
+6. Goto dev folder (project folder is created)
+	- react-native init albums
+
+7. Run project (go to project folder)
+	- react-native run-ios
+
+
+ESLint
+-----------------------------
+1. in project folder: npm install -g eslint
+
+2. check if package control is installed
+
+3. per project eslint rules
+
+4. tell eslint to make use of the per project rules
+	.eslintrc in project root folder:
+		{
+			"extends" : "rallycoding"
+		}
+
+5. install package 'SublimeLinter' and 'SublimeLinter-contrib-eslint'
