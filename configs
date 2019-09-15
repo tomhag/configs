@@ -1,0 +1,26 @@
+### .FILES
+.bash_profile
+.tmux.conf
+.vimrc
+.gitignore
+
+├── git
+│ ├── .gitconfig
+│ └── .gitignore_global
+├── install.sh
+├── osxdefaults.sh
+├── runcom
+│ ├── .bash_profile
+│ └── .inputrc
+└── system
+ ├── .alias
+ ├── .env
+ ├── .function
+ ├── .path
+ └── .prompt
+
+### YML FILES
+docker-compose.yml
+prisma.yml
+
+### SCRIPTS
